@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <EditText
+        android:id="@+id/source_loc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/source_loc_map"
+            android:layout_width="50dp"
+            android:layout_height="35dp"
+            android:src="@drawable/ic_add_location_black_24dp"
+            android:layout_alignEnd="@+id/source_loc"
+            android:layout_alignRight="@+id/source_loc"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/final_loc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/final_loc_map"
+            android:layout_width="50dp"
+            android:layout_height="35dp"
+            android:src="@drawable/ic_add_location_black_24dp"
+            android:layout_alignEnd="@+id/final_loc"
+            android:layout_alignRight="@+id/final_loc"/>
+    </RelativeLayout>
+
+</LinearLayout>
